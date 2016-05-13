@@ -25,10 +25,10 @@ pass=bkpPassword
 
 List databases to backup:
 
+`databases=( "firstDatabase" "secondDatabase" "thirdDatabase" )`
 
-
-
-**Crontab** every day at 1:30
+Set cron to run this backup every day at 1:30 and write success and error logs:
 
 `30 1	* * *	/root/backup-daily.sh > /root/backup-daily.log 2> /root/backup-daily.err`
 
+Forget everything.
