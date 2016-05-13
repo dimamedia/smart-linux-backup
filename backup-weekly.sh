@@ -39,7 +39,7 @@ pass=backupPassword     # mysql backup user's password
 # List all databases you want to backup
 databases=( "firstDatabase" "secondDatabase" "thirdDatabase" )
 
-sqlPath=$bkpPath/remote-backup/mysql_bkp
+sqlPath=$bkpPath/remote-backup
 
 for db in ${databases[@]}
 do
@@ -48,7 +48,7 @@ do
 done
 
 echo -e "\n--- Deleting over $oldFiles days old full backups from remote bkp-storage ...";
-find $bkpPath/remote-backup/fullserver-* -maxdepth 0 -type f -mtime +$oldFiles -exec rm {} \;
+find $bkpPath/remote-backup/* -maxdepth 0 -type f -mtime +$oldFiles -exec rm {} \;
 echo -e "done.\n";
 
 echo -e "\n--- Moving created backup to remote bkp-storage ...";
