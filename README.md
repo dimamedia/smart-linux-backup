@@ -92,4 +92,4 @@ Set cron to run this backup every sunday at 23:30 and write success and error lo
 
 `30 23	* * 7	/root/backup-weekly.sh > /root/backup-weekly.log 2> /root/backup-weekly.err`
 
-Forget everything.
+Forget everything. Again.
