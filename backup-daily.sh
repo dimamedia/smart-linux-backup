@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# https://github.com/dimamedia/smart-linux-backup
+
 bkpPath=/backup         # path to backup directory
 oldFiles=30             # delete daily backups older than given days
 
