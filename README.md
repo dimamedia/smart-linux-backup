@@ -1,4 +1,4 @@
-# smart-linux-backup
+# Smart linux serve backup
 Smart backup script for linux servers based on rsync, mysqldump and tar
 
 ## Daily backup
