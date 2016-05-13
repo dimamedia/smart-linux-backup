@@ -25,8 +25,8 @@ echo -e "done.\n";
 
 echo -e "\n--- Backuping Databases\n";
 
-user=backupUser         # mysql backup user
-pass=backupPassword     # mysql backup user's password
+user=bkpuser         # mysql backup user
+pass=bkpPassword     # mysql backup user's password
 # List all databases you want to backup
 databases=( "firstDatabase" "secondDatabase" "thirdDatabase" )
 
